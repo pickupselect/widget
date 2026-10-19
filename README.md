@@ -1,5 +1,7 @@
 # @pickupselect/widget
 
+[![npm](https://img.shields.io/npm/v/@pickupselect/widget)](https://www.npmjs.com/package/@pickupselect/widget)
+
 A pickup point selector map for European carriers in your checkout: parcel lockers and shops from Foxpost, Packeta, GLS,
 DPD and more, in one widget. This package contains the loader, TypeScript types and React/Vue components for
 [PickupSelect](https://pickupselect.com).
