@@ -1,0 +1,88 @@
+{
+  "name": "@pickupselect/widget",
+  "version": "0.1.0",
+  "description": "Pickup point selector map for European carriers: loader, TypeScript types and React/Vue components for the PickupSelect widget.",
+  "keywords": [
+    "pickup point",
+    "parcel locker",
+    "shipping",
+    "checkout",
+    "map",
+    "foxpost",
+    "packeta",
+    "gls",
+    "dpd",
+    "web component"
+  ],
+  "homepage": "https://pickupselect.com/docs/install",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pickupselect/widget.git"
+  },
+  "bugs": "https://github.com/pickupselect/widget/issues",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/react.d.ts",
+        "default": "./dist/react.js"
+      },
+      "require": {
+        "types": "./dist/react.d.cts",
+        "default": "./dist/react.cjs"
+      }
+    },
+    "./vue": {
+      "import": {
+        "types": "./dist/vue.d.ts",
+        "default": "./dist/vue.js"
+      },
+      "require": {
+        "types": "./dist/vue.d.cts",
+        "default": "./dist/vue.cjs"
+      }
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "vue": ">=3.3"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "react": "18.3.1",
+    "tsup": "8.3.5",
+    "typescript": "5.6.3",
+    "vue": "3.5.13"
+  }
+}
